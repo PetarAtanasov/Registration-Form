@@ -1,0 +1,129 @@
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   font-family: "Ubuntu", Sans-serif;
+}
+
+body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   background-image: url(https://images.unsplash.com/uploads/141103282695035fa1380/95cdfeef?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D.jpg);
+   background-position: 50%;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.container {
+   width: 450px;
+   border-radius: 5px;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+   text-align: center;
+   margin-bottom: 22px;
+   color: #009FE3;
+}
+
+.form {
+   background: white;
+   padding: 25px 35px;
+}
+
+.form_control {
+   margin-bottom: 5px;
+   padding-bottom: 20px;
+   position: relative;
+}
+
+.form_control label {
+   color: #3f3e3e;
+   display: block;
+   margin-bottom: 4px;
+}
+
+.form_control input {
+   font-size: 14px;
+   border: 2px solid #999;
+   border-radius: 5px;
+   display: block;
+   width: 100%;
+   padding: 8px;
+}
+
+.form_control input:focus {
+   outline: 0;
+   border-color: rgb(36, 206, 59);
+}
+
+/* js styling in css
+*/
+.form_control.success input,
+.form_control.error input {
+   border-width: 2px;
+   border-color: #02a502f8;
+}
+
+.form_control.error input {
+   border-color: #f13f3f;
+}
+
+.error_message {
+   display: flex;
+}
+
+.form_control small {
+   color: red;
+   position: absolute;
+   bottom: 0px;
+   left: 0px;
+   visibility: hidden;
+}
+
+.form_control.error small {
+   visibility: visible;
+}
+
+.form button {
+   display: block;
+   cursor: pointer;
+   background-color: #009FE3;
+   border: 2px solid #009FE3;
+   border-radius: 4px;
+   color: #fff;
+   font-weight: solid;
+   width: 100%;
+   padding: 10px;
+   margin-top: 20px;
+   font-size: 17px;
+   transition: 0.3s;
+}
+
+.form button:hover {
+   transform: scale(0.9);
+}
+
+.form button:active {
+   background-color: #1ab4fc;
+}
+
+/*icons*/
+
+.small_icons {
+   text-align: center;
+   margin-top: 10px;
+   cursor: pointer;
+}
+
+.icons {
+   padding: 0px 10px;
+   font-size: 35px;
+   transition: 0.3s;
+}
+
+.icons:hover {
+   transform: scale(0.9);
+}
